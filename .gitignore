@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Local IDE and data
+.idea/
+data/
+
+# Downloaded model and local MLflow stores
+model/
+mlruns/
+mlartifacts/
+mlflow.db
+
+# Local environment and secrets
+.env
+.env.*
+*.local
+*.pem
+
+# Never publish the supplied documents: one PDF contains a live Azure SAS token
+*.pdf
+*.zip
