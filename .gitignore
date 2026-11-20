@@ -5,9 +5,11 @@ __pycache__/
 venv/
 .pytest_cache/
 
-# Local IDE and data
+# Local IDE
 .idea/
-data/
+
+# Dataset contents are ignored by DVC-generated data/.gitignore;
+# DVC pointer files and that ignore file are tracked by Git.
 
 # Downloaded model and local MLflow stores
 model/
@@ -20,6 +22,7 @@ mlflow.db
 .env.*
 *.local
 *.pem
+.dvc/config.local
 
 # Never publish the supplied documents: one PDF contains a live Azure SAS token
 *.pdf
